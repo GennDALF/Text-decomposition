@@ -17,12 +17,12 @@ int nnmain()
       char* aPath = "C:/*.txt"; 
       TSearchRec SearchRec; 
 
-      clrscr();// âìåñòî Memo1->Clear(); 
+      clrscr();// Ð²Ð¼ÐµÑÑ‚Ð¾ Memo1->Clear(); 
 
       if (FindFirst(aPath, iAttributes, SearchRec) == 0) 
       { 
             do 
-                  printf("%s", SearchRec.Name); // âìåñòî Memo1->Lines->Add(SearchRec.Name); 
+                  printf("%s", SearchRec.Name); // Ð²Ð¼ÐµÑÑ‚Ð¾ Memo1->Lines->Add(SearchRec.Name); 
             while (FindNext(SearchRec) == 0); 
             FindClose(SearchRec); 
       }
